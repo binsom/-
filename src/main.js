@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import VueRouter from 'vue-router'
 import axios from 'axios'
+import { LoadingPlugin } from 'vux'
 import store from './store/index'
 import { AlertPlugin } from 'vux'
 
@@ -14,6 +15,7 @@ Vue.prototype.axios = axios;
 Vue.config.productionTip = false
 Vue.use(AlertPlugin);
 Vue.use(VueRouter);
+Vue.use(LoadingPlugin);
 
 /* eslint-disable no-new */
 new Vue({
